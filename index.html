@@ -583,7 +583,7 @@
                     </div>
                 </div>
                 
-                <form class="contact-form" onsubmit="handleSubmit(event)">
+                <form class="contact-form" action="https://formspree.io/f/mpwlygla" method="POST">
                     <div class="form-group">
                         <label for="name">Nombre</label>
                         <input type="text" id="name" name="name" required>
@@ -808,19 +808,7 @@
             });
         });
 
-        // Función para manejar envío del formulario
-        function handleSubmit(event) {
-            event.preventDefault();
-            
-            const formData = new FormData(event.target);
-            const data = Object.fromEntries(formData);
-            
-            // En producción, aquí enviarías los datos a un servicio como Formspree, Netlify Forms, etc.
-            console.log('Datos del formulario:', data);
-            
-            alert('¡Mensaje enviado! Te contactaré pronto.');
-            event.target.reset();
-        }
+        // ...existing code...
 
         // Header scroll effect
         window.addEventListener('scroll', () => {
