@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Pérez - Fotógrafo Profesional</title>
+    <title>Ian Martinez - Fotógrafo Profesional</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -495,7 +495,7 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav-container">
-            <a href="#" class="logo">Juan Pérez</a>
+            <a href="#" class="logo">Ian Martinez</a>
             <ul class="nav-menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -520,12 +520,12 @@
             <h2 class="section-title">Sobre Mí</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Soy Juan Pérez, un fotógrafo apasionado con más de 10 años de experiencia capturando los momentos más especiales de la vida. Mi enfoque se centra en crear imágenes auténticas y emotivas que cuenten historias únicas.</p>
+                    <p>Soy Ian Martinez, un fotógrafo apasionado con más de 10 años de experiencia capturando los momentos más especiales de la vida. Mi enfoque se centra en crear imágenes auténticas y emotivas que cuenten historias únicas.</p>
                     <p>Especializado en fotografía de retratos, bodas y eventos corporativos, trabajo con un estilo natural y elegante que refleja la personalidad y esencia de cada cliente.</p>
                     <p>Mi misión es preservar sus recuerdos más preciados a través de fotografías que perdurarán para toda la vida.</p>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=400&fit=crop&crop=face" alt="Juan Pérez - Fotógrafo">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=400&fit=crop&crop=face" alt="Ian Martinez - Fotógrafo">
                 </div>
             </div>
         </div>
@@ -611,7 +611,7 @@
                 <a href="#" class="social-link">📞</a>
                 <a href="#" class="social-link">✉️</a>
             </div>
-            <p>&copy; 2024 Juan Pérez Fotografía. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Ian Martinez Fotografía. Todos los derechos reservados.</p>
         </div>
     </footer>
 
@@ -624,64 +624,40 @@
     </div>
 
     <script>
-        // Configuración de imágenes por categoría
+        // Configuración para cargar imágenes desde carpetas locales
         const imageCategories = {
-            retratos: [
-                {
-                    url: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=300&fit=crop',
-                    title: 'Retrato Profesional'
-                },
-                {
-                    url: 'https://images.unsplash.com/photo-1494790108755-2616b2e0a93d?w=400&h=300&fit=crop',
-                    title: 'Retrato Natural'
-                },
-                {
-                    url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop',
-                    title: 'Retrato Corporativo'
-                }
-            ],
-            bodas: [
-                {
-                    url: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=300&fit=crop',
-                    title: 'Ceremonia de Boda'
-                },
-                {
-                    url: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&h=300&fit=crop',
-                    title: 'Pareja de Novios'
-                },
-                {
-                    url: 'https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?w=400&h=300&fit=crop',
-                    title: 'Detalles de Boda'
-                }
-            ],
-            eventos: [
-                {
-                    url: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=300&fit=crop',
-                    title: 'Evento Social'
-                },
-                {
-                    url: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=400&h=300&fit=crop',
-                    title: 'Celebración Familiar'
-                },
-                {
-                    url: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&h=300&fit=crop',
-                    title: 'Evento Nocturno'
-                }
-            ],
-            corporativo: [
-                {
-                    url: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=300&fit=crop',
-                    title: 'Sesión Corporativa'
-                },
-                {
-                    url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop',
-                    title: 'Equipo de Trabajo'
-                },
-                {
-                    url: 'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=400&h=300&fit=crop',
-                    title: 'Evento Corporativo'
-                }
-            ]
+            retratos: {
+                path: 'main/retratos',
+                titles: [
+                    'Retrato Profesional',
+                    'Retrato Natural',
+                    'Retrato Corporativo'
+                ]
+            },
+            bodas: {
+                path: 'main/bodas',
+                titles: [
+                    'Ceremonia de Boda',
+                    'Pareja de Novios',
+                    'Detalles de Boda'
+                ]
+            },
+            eventos: {
+                path: 'main/eventos',
+                titles: [
+                    'Evento Social',
+                    'Celebración Familiar',
+                    'Evento Nocturno'
+                ]
+            },
+            corporativo: {
+                path: 'main/corporativo',
+                titles: [
+                    'Sesión Corporativa',
+                    'Equipo de Trabajo',
+                    'Evento Corporativo'
+                ]
+            }
         };
 
         // Variables globales
@@ -708,24 +684,32 @@
         async function loadImages() {
             showLoading();
             
-            // Simular carga desde GitHub (en producción, esto cargaría desde el repositorio)
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            // Simular carga desde carpetas locales
+            await new Promise(resolve => setTimeout(resolve, 500));
 
             const images = [];
-            
-            // Combinar todas las categorías si el filtro es "all"
             if (currentFilter === 'all') {
                 Object.keys(imageCategories).forEach(category => {
-                    imageCategories[category].forEach(img => {
-                        images.push({...img, category});
-                    });
+                    const cat = imageCategories[category];
+                    // Suponemos que los archivos se llaman 1.jpg, 2.jpg, ...
+                    for (let i = 0; i < cat.titles.length; i++) {
+                        images.push({
+                            url: `${cat.path}/${i+1}.jpg`,
+                            title: cat.titles[i],
+                            category
+                        });
+                    }
                 });
             } else {
-                imageCategories[currentFilter].forEach(img => {
-                    images.push({...img, category: currentFilter});
-                });
+                const cat = imageCategories[currentFilter];
+                for (let i = 0; i < cat.titles.length; i++) {
+                    images.push({
+                        url: `${cat.path}/${i+1}.jpg`,
+                        title: cat.titles[i],
+                        category: currentFilter
+                    });
+                }
             }
-
             renderGallery(images);
             hideLoading();
         }
